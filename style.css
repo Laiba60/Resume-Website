@@ -457,18 +457,32 @@ span{
     color:var(--text-color);
     background:transparent;
     border-radius:.6rem;
-    border:.2rem soild var(--main-color);
+    border:.2rem solid var(--second-bg-color);
 
 }
-.contact form .input-box .input-filed input::placeholder
-.contact form .input-box .input-filed textarea::placeholder{
-    color:var(--text-color)
+.contact form .input-box .input-filed input::placeholder,
+.contact form .input-box .input-filed textarea::placeholder {
+    color: var(--text-color);
 }
+
 .contact form .textarea-filed{
 position:relative;
 margin:.8rem 0 2.7rem;
 display:flex;
 }
-.contact form .textarea-filed textarea{
-  resize:none
+.contact form .textarea-filed textarea {
+    width: 100%; 
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: 0.6rem;
+    border: 0.2rem solid var(--second-bg-color);
+    resize: none;
+}
+
+.btn-box .btns{
+    display:flex;
+    justify-content: center;
+    align-items:center
 }
