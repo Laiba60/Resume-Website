@@ -452,6 +452,7 @@ span{
     position:relative;
     width:49%;
     margin:.8rem 0;
+      height: 5rem;
 
 }
 .contact form .input-box .input-filed input,
@@ -470,6 +471,24 @@ span{
 .contact form .input-box .input-filed textarea::placeholder {
     color: var(--text-color);
 }
+.contact form .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  border-radius: .6rem;
+  z-index: -1;
+  transition: .5s;
+}
+.input-filed input:focus ~ .focus,
+.input-filed input:valid ~ .focus,
+.textarea-filed textarea:focus ~ .focus,
+.textarea-filed textarea:valid ~ .focus {
+  width: 100%;
+}
+
 
 .contact form .textarea-filed{
 position:relative;
@@ -494,3 +513,48 @@ display:flex;
     
 }
 
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:2rem 9%;
+    background: var(--second-bg-color);
+
+}
+.footer-text p{
+    font-size:1.6rem;
+}
+ .footer-iconTop a{
+    position:relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding:.8rem;
+    background-color: var(--main-color);
+    border:.2rem solid var(--main-color);
+    border-radius:.6rem;
+    z-index:1;
+    overflow:hidden;
+}
+.footer-iconTop a::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-color: var(--bg-color);
+    z-index:-1;
+    transition:.5s;
+}
+.footer-iconTop a i{
+    font-size:2.4rem;
+    color:var(--bg-color)
+}
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+.footer-iconTop a:hover i {
+    color: var(--main-color);
+}
