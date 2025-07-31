@@ -434,6 +434,7 @@ span{
 .contact{
     min-height:auto;
     padding:7rem;
+    background: var(--second-bg-color);
 }
 .contact form{
     max-width:70rem;
@@ -464,7 +465,7 @@ span{
     color:var(--text-color);
     background:transparent;
     border-radius:.6rem;
-    border:.2rem solid var(--second-bg-color);
+    border:.2rem solid var(--main-color);
 
 }
 .contact form .input-box .input-filed input::placeholder,
@@ -477,7 +478,7 @@ span{
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--second-bg-color);
+  background: var(--main-color);
   border-radius: .6rem;
   z-index: -1;
   transition: .5s;
@@ -488,12 +489,19 @@ span{
 .textarea-filed textarea:valid ~ .focus {
   width: 100%;
 }
+.input-filed input:hover,
+.textarea-filed textarea:hover {
+  border-color: var(--second-bg-color);
+ 
+  transition: 0.3s ease;
+}
 
 
 .contact form .textarea-filed{
 position:relative;
 margin:.8rem 0 2.7rem;
 display:flex;
+
 }
 .contact form .textarea-filed textarea {
     width: 100%; 
@@ -502,16 +510,19 @@ display:flex;
     color: var(--text-color);
     background: transparent;
     border-radius: 0.6rem;
-    border: 0.2rem solid var(--second-bg-color);
+    border: 0.2rem solid var(--main-color);
     resize: none;
 }
 
-.btn-box .btns{
-    display:flex;
+.btn-box.btns {
+    display: flex;
     justify-content: center;
-    align-items:center;
-    
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    color:var(--text-color)
 }
+
 
 .footer{
     display:flex;
@@ -519,7 +530,7 @@ display:flex;
     align-items:center;
     flex-wrap: wrap;
     padding:2rem 9%;
-    background: var(--second-bg-color);
+    
 
 }
 .footer-text p{
@@ -557,4 +568,58 @@ display:flex;
 }
 .footer-iconTop a:hover i {
     color: var(--main-color);
+}
+.projects {
+    padding: 80px 10%;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.projects .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-box {
+    background: var(--second-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+.project-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.project-box p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-box .btn {
+    background: var(--main-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.project-box .btn:hover {
+    background: var(--text-color);
 }
