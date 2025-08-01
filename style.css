@@ -70,7 +70,7 @@ body {
   color: var(--main-color); 
 }
 section {
-    min-height: 100vh;
+    min-height: 90vh;
      padding: 5rem 5%;
 }
 
@@ -111,6 +111,7 @@ section {
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+    text-align: justify;
 }
 
 .btn-box {
@@ -162,7 +163,7 @@ section {
 
 .home-sci {
     position: absolute;
-    bottom: 4rem;
+    bottom:3.5rem;
     display: flex;
     gap: 2rem;
 }
@@ -623,98 +624,16 @@ display:flex;
 .project-box .btn:hover {
     background: var(--text-color);
 }
-/* ------------------ Responsive Menu ------------------ */
 @media (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-
-  #menu-icon {
-    display: block;
-    font-size: 3.6rem;
-    cursor: pointer;
-    z-index: 10001;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    display: none;
-    background: var(--bg-color);
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    z-index: 1000;
-  }
-
-  .navbar a {
-    display: block;
-    margin: 1.5rem 0;
-    font-size: 2rem;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .home {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .home-content h1 {
-    font-size: 3.5rem;
-  }
-
-  .home-content .text-animate {
-    font-size: 2.5rem;
-  }
-
-  .btn-box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home-sci {
-    position: static;
-    margin-top: 2rem;
-  }
-
-  .about {
-    flex-direction: column;
-    padding: 4rem 5%;
-  }
-
-  .about-img {
-    width: 20rem;
-    height: 20rem;
-    margin-bottom: 2rem;
-  }
-
-  .skills-row,
-  .education-row {
-    flex-direction: column;
-  }
-
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-
-  .contact form .input-box {
-    flex-direction: column;
-  }
-
-  .contact form .input-box .input-filed {
-    width: 100%;
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
+  section.home {
+    padding: 2rem 3%;
+    min-height: auto;
   }
 }
+
+
+
+
 
 
 
