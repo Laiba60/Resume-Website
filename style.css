@@ -266,9 +266,9 @@ span{
 .about-img img{
     width:90%;
     border-radius: 50%;
-    border: .2rem solid var(--main-color);
-     border-left: .2rem solid var(--main-color);
-      border-right: .2rem solid var(--main-color);
+    
+      border: .2rem solid var(--main-color);
+  
 }
 .about-content p{
     font-size: 1.6rem;
